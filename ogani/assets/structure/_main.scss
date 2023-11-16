@@ -1,0 +1,14 @@
+#main{
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 30px;
+}
+.banner-section{
+    display: flex;
+    justify-content: end;
+    .banner{
+    background-image: url(/assets/imgs/banner.jpg.webp);
+    }
+}

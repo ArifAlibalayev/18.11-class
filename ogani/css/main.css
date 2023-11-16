@@ -1,0 +1,250 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.topside-header {
+  min-height: 4vh;
+  background-color: #f7f7f7;
+}
+
+.infobar {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: auto;
+  padding-top: 10px;
+  font-size: 12px;
+}
+.infobar .leftside-infobar {
+  display: flex;
+  gap: 10px;
+}
+.infobar .leftside-infobar .mailsection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 0 10px;
+  border-right: 1px solid rgba(136, 136, 136, 0.7);
+}
+.infobar .leftside-infobar .shipping-info {
+  display: grid;
+  place-content: center;
+}
+.infobar .rightside-infobar {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.infobar .rightside-infobar .socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 0 10px;
+  border-right: 1px solid rgba(136, 136, 136, 0.7);
+}
+.infobar .rightside-infobar .languageselect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 0 10px;
+  border-right: 1px solid rgba(136, 136, 136, 0.7);
+}
+.infobar .rightside-infobar .languageselect select {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.under-header {
+  display: flex;
+  margin: auto;
+  padding-top: 20px;
+  font-size: 12px;
+  max-width: 1400px;
+  flex-direction: column;
+}
+.under-header .logoside {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+.under-header .logoside .logo {
+  width: 20%;
+}
+.under-header .logoside .logoside-btns {
+  width: 50%;
+}
+.under-header .logoside .logoside-btns ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 95px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.under-header .logoside .logoside-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-size: 24px;
+}
+.under-header .logoside .logoside-cart i {
+  position: relative;
+}
+.under-header .logoside .logoside-cart i .amount {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: #7fad39;
+  font-size: 8px;
+  color: white;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  right: -10px;
+  top: -8px;
+}
+.under-header .logoside .logoside-cart p {
+  font-size: 12px;
+  padding-left: 20px;
+}
+
+.searchside {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+  padding-top: 20px;
+}
+.searchside .all-departments {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  line-height: 30px;
+  color: white;
+  background-color: #7fad39;
+  width: 300px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  position: relative;
+}
+
+.dropdown-departments {
+  width: 300px;
+  position: absolute;
+  overflow: hidden;
+  height: 0%;
+  border: 1px solid rgba(136, 136, 136, 0.2);
+  transition: 0.3s linear;
+}
+.dropdown-departments ul li {
+  font-size: 18px;
+  padding: 10px;
+}
+
+.active {
+  height: 48vh !important;
+}
+
+.fakesearch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 600;
+  border: 1px solid rgba(136, 136, 136, 0.2);
+  padding-left: 10px;
+  width: 50%;
+}
+.fakesearch i {
+  padding: 0 10px;
+  border-right: 1px solid rgba(136, 136, 136, 0.5);
+}
+.fakesearch input {
+  outline: none;
+  border: none;
+}
+.fakesearch button {
+  outline: none;
+  border: none;
+  background-color: #7fad39;
+  color: white;
+  font-size: 16px;
+  width: 100px;
+  height: 50px;
+  font-weight: 600;
+}
+
+.searchcontact {
+  display: flex;
+  gap: 20px;
+}
+.searchcontact i {
+  color: #7fad39;
+  background-color: #f7f7f7;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+.searchcontact p {
+  color: #888888;
+}
+
+.ds-flex {
+  display: flex !important;
+}
+
+.jc-center {
+  justify-content: center !important;
+}
+
+.ai-center {
+  align-items: center !important;
+}
+
+.dir-col {
+  flex-direction: column !important;
+}
+
+.pd-20 {
+  padding: 20px !important;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 30px;
+}
+
+.banner-section {
+  display: flex;
+  justify-content: end;
+}
+.banner-section .banner {
+  background-image: url(/assets/imgs/banner.jpg.webp);
+}/*# sourceMappingURL=main.css.map */
